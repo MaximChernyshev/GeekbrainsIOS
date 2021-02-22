@@ -45,10 +45,14 @@ numbers = tmp
 
 var fib: [Int] = [0, 1]
 
-func fibbonaci(arr: [Int]) -> Void {
+func fibbonaci(arr: inout [Int]) -> Void {
     arr.append(arr[arr.count - 1] + arr[arr.count - 2])
 }
-fibbonaci(arr: fib)
-fibbonaci(arr: fib)
-fibbonaci(arr: fib)
+fibbonaci(arr: &fib)
+fibbonaci(arr: &fib)
+fibbonaci(arr: &fib)
+fibbonaci(arr: &fib)
+fibbonaci(arr: &fib)
+fibbonaci(arr: &fib)
 
+print(fib)
