@@ -1,7 +1,6 @@
 import Foundation
 
 //Ex. 1
-
 func checkEven(_ number: Int) -> Bool {
     return number % 2 == 0
 }
@@ -10,7 +9,6 @@ checkEven(5)
 checkEven(6)
 
 //Ex. 2
-
 func deliNaTri(_ a: Int) -> Bool {
     return a % 3 == 0
 }
@@ -23,7 +21,6 @@ deliNaTri(4)
 var numbers: [Int] = []
 
 //Ex. 3
-
 for i in (0...100) {
     numbers.append(i)
 }
@@ -31,7 +28,6 @@ for i in (0...100) {
 print(numbers)
 
 //Ex. 4
-
 var tmp: [Int] = []
 for i in numbers {
     if deliNaTri(numbers[i]) && !checkEven(numbers[i]) {
@@ -42,7 +38,6 @@ for i in numbers {
 numbers = tmp
 
 //Ex. 5*
-
 var fib: [Int] = [0, 1]
 
 func fibbonaci(arr: inout [Int]) -> Void {
