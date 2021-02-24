@@ -95,9 +95,15 @@ var truck = TruckCar(model: "MAN", year: 2008, engine: .diesel, type: .truck, ho
 var bugatti = SportCar(model: "Veyron", year: 2010, engine: .gas, type: .coupe, horsepower: 1000.1, acceleration: 1.8)
 
 truck.startEngine()
+print("Truck engine is \(truck.engineStatus)")
 
 if truck.isEngineStarted() {
     truck.unloadBody()
+    print("Truck engine is \(truck.engineStatus)")
 }
 
 bugatti.startEngine()
+print(bugatti.engineStatus)
+print("Our Bugatti was made at \(bugatti.year)")
+print("Bugatti Veyron runs 0 to 100 km/h at \(bugatti.acceleration) sec")
+
