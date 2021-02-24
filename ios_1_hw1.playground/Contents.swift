@@ -19,10 +19,20 @@ if disc > 0 {
     x1 = -b / 2*a
     print("x1,2 =", x1)
 } else {
-    print("no solutions")
+    print("no solutions)")
 }
 
-print(5 > 6)
+print()
 
+//Задача про треугольник
 
-//
+let kat1: Double = 5
+let kat2: Double = 12
+var hypotenuse: Double = sqrt(pow(kat1, 2) + pow(kat2, 2))
+var p = kat1 + kat2 + hypotenuse
+var s = kat1 * kat2 / 2
+
+print("Гипотенуза = \(hypotenuse)")
+print("Периметр = \(p)")
+print("Площадь = \(s)")
+
