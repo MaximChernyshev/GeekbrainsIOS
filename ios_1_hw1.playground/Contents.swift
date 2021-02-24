@@ -36,3 +36,13 @@ print("Гипотенуза = \(hypotenuse)")
 print("Периметр = \(p)")
 print("Площадь = \(s)")
 
+
+//Задача про вклад (*)
+
+var sum: Double = 50000
+let percent: Double = 7
+
+for _ in 1...5 {
+    sum = sum * (1 + percent/100)
+}
+print(sum)
